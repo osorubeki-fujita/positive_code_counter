@@ -33,4 +33,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "capistrano"
   spec.add_development_dependency "deplo", ">= 0.2.1"
+
+  spec.add_runtime_dependency "positive_kernel_support"
 end
