@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+
+require "positive_code_counter"
