@@ -3,12 +3,12 @@ require "positive_code_counter/file_info"
 
 class PositiveCodeCounter
 
-  def self.process( filenames )
-    self.new( filenames ).process
+  def self.process( *filenames )
+    self.new( *filenames ).process
   end
 
-  def initialize( filenames )
-    @file_infos = filenames.map { | filename |
+  def initialize( *filenames )
+    @file_infos = filenames.flatten.map { | filename |
       ::PositiveCodeCounter::FileInfo.new( filename )
     }
   end
